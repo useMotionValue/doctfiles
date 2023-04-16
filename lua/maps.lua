@@ -1,5 +1,8 @@
 local keymap = vim.keymap
 
+-- leader key mapping
+vim.g.mapleader = " "
+
 keymap.set('i', 'jj', '<Esc>')
 
 keymap.set('n', 'x', '"_x')
@@ -36,6 +39,9 @@ keymap.set('n', '<C-Down>', ':resize -2<CR>')
 keymap.set('n', '<C-Up>', ':resize +2<CR>')
 keymap.set('n', '<C-Left>', ':vertical resize -2<CR>')
 keymap.set('n', '<C-Right>', ':vertical resize +2<CR>')
+
+-- git
+keymap.set('n', '<leader>gb', ':GitBlame<CR>', { noremap = true, silent = true })
 
 -- comment string
 vim.keymap.set("n", "<C-_>", function() require('Comment.api').toggle.linewise.current() end,
