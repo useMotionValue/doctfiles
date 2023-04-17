@@ -67,10 +67,10 @@ packer.startup(function(use)
 
   -- colorscheme
   use { "catppuccin/nvim", as = "catppuccin" }
-  use {
-    'svrana/neosolarized.nvim',
-    requires = { 'tjdevries/colorbuddy.nvim' }
-  }
+  -- use {
+  -- 'svrana/neosolarized.nvim',
+  -- requires = { 'tjdevries/colorbuddy.nvim' }
+  -- }
   use 'drewtempelmeyer/palenight.vim'
   use 'folke/tokyonight.nvim'
 end)

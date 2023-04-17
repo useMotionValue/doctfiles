@@ -1,9 +1,10 @@
 local keymap = vim.keymap
 
 -- leader key mapping
-vim.g.mapleader = " "
+-- vim.g.mapleader = " "
 
 keymap.set('i', 'jj', '<Esc>')
+keymap.set('i', 'jk', '<Esc>:w<Enter>')
 
 keymap.set('n', 'x', '"_x')
 
